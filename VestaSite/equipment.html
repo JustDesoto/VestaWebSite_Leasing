@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Арендис - Лизинг оборудования</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- Заголовок -->
+<header>
+  <h3>Лизинг автомобилей</h3>
+</header>
+
+<!-- Навигация -->
+<nav>
+  <div class="nav-left">
+    <img src="img/logo.png" alt="Логотип компании" class="logo">
+    <span class="company-name">Арендис</span>
+  </div>
+  <div class="nav-center">
+    <a href="index.html">Главная</a>
+
+
+  </div>
+  <div class="nav-right">
+    <button class="contact-button">Обратная связь</button>
+  </div>
+</nav>
+
+<!-- Основное содержание -->
+<main>
+  <section id="about">
+    <h2>О лизинге оборудования</h2>
+    <p>Компания "Арендис" предоставляет выгодные условия для лизинга различного оборудования. Мы работаем с современными технологиями и предлагаем оборудование для промышленности, сельского хозяйства, строительства и IT-сектора.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Условия лизинга</h2>
+    <p>Мы предлагаем гибкие условия для вашего бизнеса. Вы можете выбрать подходящий срок аренды и сумму платежа. Лизинг оборудования с нами — это простота, доступность и надежность.</p>
+    <ul>
+      <li>Минимальные ставки по лизингу</li>
+      <li>Гибкие условия оплаты</li>
+      <li>Оборудование от ведущих производителей</li>
+      <li>Поддержка в процессе использования оборудования</li>
+    </ul>
+  </section>
+
+  <section id="how-it-works">
+    <h2>Как это работает?</h2>
+    <p>Процесс лизинга с нами прост и понятен:</p>
+    <ol>
+      <li><strong>Выбор оборудования:</strong> Вы выбираете необходимое оборудование из нашего каталога.</li>
+      <li><strong>Заключение договора:</strong> Оформляем договор лизинга с гибкими условиями.</li>
+      <li><strong>Получение оборудования:</strong> После подписания договора мы передаем вам оборудование.</li>
+      <li><strong>Использование и оплата:</strong> Вы пользуетесь оборудованием, а оплата происходит по согласованному графику.</li>
+    </ol>
+  </section>
+
+  <section id="equipment-gallery">
+    <h2>Наше оборудование</h2>
+    <div class="equipment-cards">
+      <div class="equipment-card">
+        <img src="img/equipment1.webp" alt="Оборудование 1">
+        <h3>Современные экскаваторы</h3>
+        <p>Мощные и надежные экскаваторы для различных строительных работ.</p>
+      </div>
+      <div class="equipment-card">
+        <img src="img/equipment2.webp" alt="Оборудование 2">
+        <h3>Погрузчики</h3>
+        <p>Погрузчики для различных нужд в складских и строительных работах.</p>
+      </div>
+      <div class="equipment-card">
+        <img src="img/equipment3.webp" alt="Оборудование 3">
+        <h3>Сельскохозяйственная техника</h3>
+        <p>Техника для обработки сельскохозяйственных угодий и транспортировки.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +375 (29) 123-45-67</p>
+    <p>Email: vesta@leasing.by</p>
+    <p>Адрес: г. Минск | Долгиновский тракт 152 </p>
+  </section>
+
+</main>
+
+<!-- Футер -->
+<footer>
+  <p>&copy; 2024 Лизинговая компания "Арендис" от Весты. Все права защищены.</p>
+</footer>
+
+<!-- Модальное окно -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Обратная связь</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Открытие модального окна
+  const contactButton = document.querySelector('.contact-button');
+  const modal = document.getElementById('contactModal');
+  const closeButton = document.querySelector('.close-button');
+
+  contactButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  // Закрытие модального окна
+  closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Закрытие модального окна при клике вне его
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>

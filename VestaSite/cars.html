@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Арендис - Лизинг автомобилей</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!-- Заголовок -->
+<header>
+  <h3>Лизинг автомобилей</h3>
+</header>
+
+<!-- Навигация -->
+<nav>
+  <div class="nav-left">
+    <img src="img/logo.png" alt="Логотип компании" class="logo">
+    <span class="company-name">Арендис</span>
+  </div>
+  <div class="nav-center">
+    <a href="index.html">Главная</a>
+
+
+  </div>
+  <div class="nav-right">
+    <button class="contact-button">Обратная связь</button>
+  </div>
+</nav>
+
+<!-- Основной контент -->
+<main>
+  <section id="leasing-info">
+    <h2>Лизинг автомобилей</h2>
+    <p>Компания "Арендис" предлагает выгодные условия лизинга автомобилей для бизнеса. Мы работаем с широким
+      ассортиментом транспортных средств, от эконом-класса до представительских автомобилей, чтобы вы могли выбрать
+      лучший вариант для ваших нужд.</p>
+  </section>
+
+  <section id="car-types">
+    <h2>Наши автомобили</h2>
+    <div class="car-cards">
+      <!-- Карточка 1 -->
+      <div class="car-card">
+        <img src="img/car1.jpg" alt="Автомобиль 1">
+        <h3>Эконом-класс</h3>
+        <p>Удобные и экономичные автомобили для повседневных нужд бизнеса. Доступные и экономичные решения.</p>
+
+      </div>
+      <!-- Карточка 2 -->
+      <div class="car-card">
+        <img src="img/car2.jpg" alt="Автомобиль 2">
+        <h3>Средний класс</h3>
+        <p>Современные автомобили с хорошими характеристиками, комфортом и низким расходом топлива.</p>
+
+      </div>
+      <!-- Карточка 3 -->
+      <div class="car-card">
+        <img src="img/car3.jpg" alt="Автомобиль 3">
+        <h3>Представительский класс</h3>
+        <p>Роскошные автомобили для бизнеса, которым требуется высокий уровень комфорта и имиджа.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="leasing-terms">
+    <h2>Условия лизинга</h2>
+    <ul>
+      <li><strong>Срок лизинга:</strong> от 12 до 60 месяцев.</li>
+      <p></p>
+      <li><strong>Первоначальный взнос:</strong> от 10% от стоимости автомобиля.</li>
+      <p></p>
+      <li><strong>Процентная ставка:</strong> от 7% годовых, в зависимости от срока и стоимости.</li>
+      <p></p>
+      <li><strong>Документы для оформления:</strong> паспорт, ИНН, регистрация бизнеса, финансовые документы.</li>
+      <p></p>
+      <li><strong>Дополнительные услуги:</strong> страхование, техобслуживание, аренда с водителем.</li>
+    </ul>
+  </section>
+
+  <section id="how-it-works">
+    <h2>Как это работает?</h2>
+    <ol>
+      <li><strong>Шаг 1:</strong> Выбираете автомобиль, который подходит для ваших нужд.</li>
+      <p></p>
+      <li><strong>Шаг 2:</strong> Оформляете заявку на лизинг через наш сайт или по телефону.</li>
+      <p></p>
+      <li><strong>Шаг 3:</strong> Мы проверяем заявку и согласовываем условия.</li>
+      <p></p>
+      <li><strong>Шаг 4:</strong> Подписываете договор и получаете автомобиль в распоряжение.</li>
+      <p></p>
+      <li><strong>Шаг 5:</strong> Выполняете регулярные платежи по договору и пользуетесь автомобилем.</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +375 (29) 123-45-67</p>
+    <p>Email: vesta@leasing.by</p>
+    <p>Адрес: г. Минск | Долгиновский тракт 152 </p>
+  </section>
+
+</main>
+
+<!-- Футер -->
+<footer>
+  <p>&copy; 2024 Лизинговая компания "Арендис". Все права защищены.</p>
+</footer>
+
+<!-- Модальное окно -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Обратная связь</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Открытие модального окна
+  const contactButton = document.querySelector('.contact-button');
+  const modal = document.getElementById('contactModal');
+  const closeButton = document.querySelector('.close-button');
+
+  contactButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  // Закрытие модального окна
+  closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Закрытие модального окна при клике вне его
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+</body>
+
+</html>

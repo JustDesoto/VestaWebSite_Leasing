@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лизинговая компания "Ваш Лизинг"</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лизинговая компания "Арендис"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h3>Надежные партнеры в развитии вашего бизнеса</h3>
+</header>
+<nav>
+  <div class="nav-left">
+    <img src="img/logo.png" alt="Логотип компании" class="logo">
+    <span class="company-name">Арендис</span>
+  </div>
+  <div class="nav-center">
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#benefits">Преимущества</a>
+    <a href="#contact">Контакты</a>
+  </div>
+  <div class="nav-right">
+    <button class="contact-button">Обратная связь</button>
+  </div>
+</nav>
+<main>
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Компания "Арендис" предоставляет профессиональные услуги по лизингу коммерческой недвижимости, автотранспорта и оборудования. Мы работаем с бизнесом любого масштаба и помогаем решать задачи финансирования в кратчайшие сроки.</p>
+  </section>
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+
+      <a href="cars.html" class="card-link">
+      <div  class="card-linked">
+        <h3>Лизинг автомобилей</h3>
+        <p>Новые и подержанные автомобили для вашего бизнеса на выгодных условиях.</p>
+      </div>
+      </a>
+
+      <a href="equipment.html" class="card-link">
+      <div class="card-linked">
+        <h3>Лизинг оборудования</h3>
+        <p>Современное оборудование для промышленности, сельского хозяйства и IT-сектора.</p>
+      </div>
+      </a>
+
+      <a href="real-estate.html" class="card-link">
+      <div class="card-linked">
+        <h3>Лизинг недвижимости</h3>
+        <p>Коммерческая недвижимость для офисов, магазинов и складов.</p>
+      </div>
+      </a>
+
+    </div>
+  </section>
+  <section id="benefits">
+    <h2>Почему выбирают нас?</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Гибкие условия</h3>
+        <p>Индивидуальный подход к каждому клиенту.</p>
+      </div>
+      <div class="card">
+        <h3>Низкие ставки</h3>
+        <p>Выгодные тарифы и минимальные переплаты.</p>
+      </div>
+      <div class="card">
+        <h3>Оперативность</h3>
+        <p>Рассмотрение заявок за 24 часа.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p>Телефон: +375 (29) 123-45-67</p>
+    <p>Email: vesta@leasing.by</p>
+    <p>Адрес: г. Минск | Долгиновский тракт 152 </p>
+  </section>
+
+
+</main>
+<footer>
+  <p>&copy; 2024 Лизинговая компания "Арендис" от Весты. Все права защищены.</p>
+</footer>
+
+<!-- Модальное окно -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Обратная связь</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Открытие модального окна
+  const contactButton = document.querySelector('.contact-button');
+  const modal = document.getElementById('contactModal');
+  const closeButton = document.querySelector('.close-button');
+
+  contactButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  // Закрытие модального окна
+  closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Закрытие модального окна при клике вне его
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+</body>
+
+</html>
+
+
+
+
+</body>
+</html>
+
